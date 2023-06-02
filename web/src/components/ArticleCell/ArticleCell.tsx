@@ -21,5 +21,5 @@ export const Failure = ({ error }: CellFailureProps) => (
 )
 
 export const Success = ({ article }: CellSuccessProps<ArticleQuery>) => {
-  return <div>{JSON.stringify(article)}</div>
+  return JSON.stringify(article)
 }
